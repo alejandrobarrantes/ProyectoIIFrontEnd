@@ -127,6 +127,7 @@ function add(){
 
 function showHide(){
 	document.getElementById("popup2").classList.toggle("active");
+	console.log("esconde");
 }
 
 
