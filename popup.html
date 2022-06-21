@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+	   <div id="overlay" class="overlay"></div>    
+    
+<!--popup-->
+    <div id="popup" class='popup'>
+        <div class='col-12'>
+            <div>
+                <form name="formulario">
+                <div class='container'>
+                    <div class='row'><div class='col-12 text-centered cooper'>Perfil</div></div>
+                    <div class='row'><div class='col-6 text-right'>Cedula</div><div class='col-6'><input type="text" name="cedula" id="cedula" value="" disabled></div></div>
+                    <div class='row'><div class='col-6 text-right'>Nombre</div><div class='col-6'><input type="text" name="nombre" id="nombre" value="" disabled></div></div>
+                    <div class='row'><div class='col-6 text-right'>Sexo</div>
+                        <div class='col-6'>
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="sexo" value="M" id="sexoMasc" disabled></td>
+                                    <td id="tdMasc"></td>
+                                    <td><input type="radio" name="sexo" value="F" id="sexoFem" disabled></td>
+                                    <td id="tdFem"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class='row'><div class='col-12 text-centered cooper'><input id="regresar" class="boton" type="button" value="Regresar"></div></div>	   
+                </div>
+                </form> 
+            </div>
+        </div>     
+    </div>
+</body>
+</html>
