@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>view</title>
+<link href="register.css" rel="stylesheet" type="text/css">
+	<link href="../menuLoad/menu.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/d7e017c383.js" crossorigin="anonymous"></script>
+	<script src="controllerRegister.js"> </script>
+	<script src="../menuLoad/menu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body style="background-color:gray;">
+	<div id="container">
+		
+		<!-- Nav Bar-->
+	
+		
+		<div class="right-panel">
+		<div class="center">
+			<div class="image">
+			<img class="image-img" src="../imagen.PNG">
+			</div>
+			<div class="text">Doctor Registration</div>
+			<div class="inputs"> 
+				<input required id="id" class="input" placeholder="Id or email address">
+				<input required id="password" class="input" placeholder="Password">
+				<input required id="name" class="input" placeholder="Name">
+				<input required id="speciality" class="input" placeholder="Speciality">
+				<input required id="fee" class="input" placeholder="Fee">
+				<input required id="location" class="input" placeholder="Location">
+				<input required id="frecuency" class="input" placeholder="Frecuencia">
+				<div class="up-div">
+						<div class="column">
+							<div class="file-select" id="src-file1" >
+  							<input id="in-file" type="file" name="src-file1" aria-label="Archivo">
+						</div>
+						</div>
+						<div class="column">
+							<img id="p-img" class="p-img" src="">
+						</div>
+						
+				</div>
+			</div>
+			<div class="button">
+				<button id="schedule" class="button-button" type="submit">Schedule</button>
+				<button id="register-button" class="button-button" type="submit">Register</button>
+			</div>
+		</div>
+			
+			
+		<div id="popup" class="schedule-popup">
+			<div class="calendar"> <i class="fa-solid fa-calendar fa-3x"></i><i class="fa-solid fa-x close"></i></div>
+			<div style="text-align: center">Doctor schedule</div>
+			<div id="schedules" class="schedules">
+				
+				<!--- Horarios -->
+			</div>
+			<div class="save">
+			<button id="save-button"  type="submit" class="btn btn-primary">Save</button>
+			</div>
+		</div>
+			
+		</div>
+		
+		<div id="user" class="user">
+			<img src="../imagen.PNG">
+			<h4>Alejandro Barrantes Castro</h4>
+		</div>
+	
+	</div>
+</body>
+</html>

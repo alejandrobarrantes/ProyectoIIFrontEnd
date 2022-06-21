@@ -1,0 +1,405 @@
+@charset "utf-8";
+/* CSS Document */
+
+.user{
+    display: flex;
+    position: absolute;
+	visibility: hidden;
+    top: -20%; 
+    left: 84%;
+    width: 15%; 
+    height:12%;
+    justify-content: center;
+    padding-top: 1em;    
+    background-color:rgba(105,116,170,1.00);
+    z-index:2;
+    border: 1px solid rgba(0,0,0,.2);
+    transition: all 2.5s linear;  
+	color:white;
+}
+
+.user h4{
+	font-size:15px;
+}
+.user.active{
+	 top: 0%; 
+  visibility: visible;
+	
+}
+
+.user img{
+	width: 60px;
+	height: 50px;
+	margin-right: 5px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+
+
+
+.right-panel{
+	width: 100%;
+	text-align: center;
+	align-content: center;
+}
+
+.search-bar{
+	height:60px;
+	display: inline-flex;
+}
+.input-search{
+	border-radius:15px;
+	margin-top: 15px;
+	height: 20px;
+	background-color:rgba(206,200,200,1.00);
+}
+.search-button{
+	border-radius:5px;
+	margin-top: 15px;
+	height: 20px;
+	color: white;
+	background-image: linear-gradient(to right, DarkSlateGray ,Royalblue,navy,Royalblue,DarkSlateGray);
+}
+.search-button:hover{
+	background-color:antiquewhite;
+}
+
+.add{
+	margin-left: 100px;
+	border-radius:5px;
+	margin-top: 15px;
+	height: 20px;
+	color: white;
+	background-image: linear-gradient(to right, DarkSlateGray ,Royalblue,navy,Royalblue,DarkSlateGray);
+}
+
+.add:hover{
+	background-color:antiquewhite;
+}
+.titles{
+	height:30px;
+	width: 100%;
+	display: inline-flex;
+	/*background-image: linear-gradient(to right, DarkSlateGray ,Royalblue,navy,Royalblue,DarkSlateGray);*/
+	background-color: DarkSlateGray;
+	color: white;
+}
+.title{
+	text-align: center;
+	width: 25%;
+	font-size: 17px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.patients-container{
+	border: groove;
+	border-color:rgba(72,158,202,1.00);
+	width: 90%;
+	height: 500px;
+	margin-left: 60px;
+	margin-top: 5px;
+	background-color:aliceblue;
+	/*margin-top: 40px;*/
+	overflow-y: scroll;
+	overflow-x: visible;
+}
+
+/* Track */
+.patients-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.patients-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.patients-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.patient{
+	background-color:royalblue;
+	margin-top: 10px;
+	height: 50px;
+	width: 100%;
+	color: white;
+	display: inline-flex;
+
+}
+.patient-info{
+	font-size: 13px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	text-align:start;
+	display: inline-flex;
+	width: 25%;
+	height: 100%;
+	margin-left: 60px;
+}
+h3{
+	margin-top: 5px;
+}
+
+.btn-Consulta{
+	margin-top: 5px;
+	border-radius: 40px;
+	width: 150px;
+	height: 40px;
+	border-color: aqua;
+	color:rgba(74,121,177,1.00);
+	
+}
+
+.popup {
+    display: grid;
+    visibility: hidden;
+    position: absolute; 
+	border-radius: 10px;
+    left: 35%;
+    width: 400px; 
+    height: 400px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+    justify-content: center;
+    padding-top: 1em;    
+    background-color: white;
+    z-index:2;
+	border: groove;
+	border-color: DarkSlateGray;
+	background-color:white;
+}
+
+.popup.active {
+  top: 10%; 
+  visibility: visible;
+}
+
+.overlay{
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    top: 0%; 
+    left: 0%;
+    width: 100%; 
+    height: 100%;
+    background-color: #000;;
+    z-index:1; 
+    opacity:0;
+    transition: all 1s ease;    
+}
+
+.overlay.active {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.p-container{
+	height: 100%;
+	width: 300px;;
+	display: grid;
+}
+
+.row{
+	text-align: center;
+	display: flex;
+	width: 90%;
+	height: 40px;
+	margin-top: 20px;
+
+}
+.boton{
+	background-color:rgba(60,144,183,1.00);
+	border-radius: 7px;
+	margin-top: 10px;
+	width: 90px;
+	height: 40px;
+	color:white;
+	font: bold;
+	font-weight: 500;
+	border: none;
+	margin-left: 90px;
+	
+}
+.content-input input,
+.content-select select{
+	margin-left: 40px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select{
+	max-width: 250px;
+	position: relative;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: #B1E8CD;
+}
+ 
+/* 
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.content-select:hover i{
+	margin-top: 3px;
+}
+
+
+
+.popup2{
+    display: grid;
+    visibility: hidden;
+    position: absolute; 
+	border-radius: 10px;
+    left: 35%;
+    width: 400px; 
+    height: 460px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+    justify-content: center;
+    padding-top: 1em;    
+    background-color: white;
+    z-index:3;
+	border: groove;
+	border-color: DarkSlateGray;
+}
+.popup2.active {
+  top: 10%; 
+  visibility: visible;
+}
+
+.vertical{
+	width: 100%;
+	height: 40px;
+	display: inline-flex;
+}
+
+.text{
+	height: 100%;
+	color:rgba(86,67,67,1.00);
+	width: 30%;font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.i-popup{
+	border: none;
+	border-bottom: groove;
+	font-size: 15px;
+	text-decoration: none;
+	background-color: #eee;
+    border: 0;
+	outline: none;
+	height: 30px;
+	margin-top: 10px;
+}
+
+.up-div{
+	height: 150px;
+	margin-top: 10px;
+	display: inline-flex;
+}
+
+.column{
+	width: 50%;
+	height: 100%;
+}
+.p-img{
+	border-radius: 5px;
+	height: 100px;
+}
+.file-select {
+}
+
+.file-select::before {
+  background-color: #5678EF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar'; /* testo por defecto */
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
+
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+	
+}
+
+#src-file1::before {
+  content: 'SUBIR FOTO';
+	
+}
+
+.input-date{
+	width: 100px;
+	background-color: rgba(28,81,105,1.00);
+	border-radius: 5px;
+	color:white;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.input-date2{
+	float: right;
+	width: 50%;
+	margin-left: 20px;
+	background-color:rgba(28,81,105,1.00);
+	color:white;
+	border-radius: 5px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.text-right{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}

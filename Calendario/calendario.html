@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	<link href="../menuLoad/menu.css" rel="stylesheet" type="text/css">
+	<link href="calendario.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/d7e017c383.js" crossorigin="anonymous"></script>
+	<script src="controller.js" crossorigin="anonymous"></script>
+	<script src="loadViews.js" ></script>
+	<script src="../menuLoad/menu.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+</head>
+<body>
+	<div id="container" class="container">
+		
+		<div class="right-panel">
+			<div class="slider">
+				<div class="arrow">
+					<a href="#"><i id="left-arrow"  class="fa-solid fa-chevron-left fa-2x"></i></a>
+				</div>
+				<div class="month">
+					<h1 id="month"></h1>
+				</div>
+				<div class="arrow">
+					<a href="#"><i id="right-arrow" class="fa-solid fa-chevron-right fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="calendar" id="calendar">
+				
+			</div>
+		</div>
+		
+		
+		<div id="overlay" class="overlay"></div>
+		<div id="popup" class='popup'>
+        	<div class='col-12'>
+            	<div>
+                	<form name="formulario">
+                	<div id="date-container" class='p-container'>
+                    	<div class='row'>
+							<div class='col-6 text-right'>Tipo de Cita</div>
+							<select class="input-date2" type="text" name="type" id="tipo" value="yyyy">
+							<option>Consulta Inicial</option>
+							<option>Seguimiento</option>
+						</select>
+						</div>
+                    	<div class='row'><div class='col-6 text-right'>Motivo de Cita</div>
+							<select class="input-date2" type="text" name="motive" id="motivo" value="yyyy">
+							<option>Enfermedad</option>
+							<option>Revisión</option>
+						</select>
+						</div>
+						<div class='row'><div class='col-6 text-right'>Fecha:</div><input id="d-d" class="input-date2" type="text" name="nombre" id="nombre" disabled></div><br>
+						<div class='row'><div class='col-6 text-right'>Hora:</div><input id="d-t" class="input-date2" type="text" name="nombre" id="nombre" disabled></div><br>
+                    	<div class='row'>
+							<div class='col-6 text-right'>Paciente</div>
+							<div  class="content-select">
+								<select id="select">
+									
+								</select>
+							</div>
+                    	</div>
+						<div style="display: inline-flex;" id="buttons">
+						<div class='row'><div class='col-12 text-centered cooper'><input id="btn-agendar" class="boton" type="button" value="Agendar"></div></div>	   
+						</div>
+                    	
+                	</div>
+                </form> 
+            	</div>
+        	</div>     
+    	</div>
+		
+		<div id="user" class="user">
+			<img src="../imagen.PNG">
+			<h4>Alejandro Barrantes Castro</h4>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

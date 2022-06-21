@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	<link href="pacientes.css" rel="stylesheet" type="text/css">
+	<link href="../menuLoad/menu.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://kit.fontawesome.com/d7e017c383.js" crossorigin="anonymous"></script>
+	<script src="controller.js"></script>
+	<script src="../menuLoad/menu.js"></script>
+</head>
+<body>
+	<div id="container" class="container">
+		<div class="right-panel">
+			<div class="search-bar">
+				<input class="input-search">
+				<button class="search-button"><i  style="margin-top: 0px" class="fa-solid fa-magnifying-glass"></i></button>
+				<button id="add-p" class="add">+Nuevo paciente</button>
+			</div>
+			<div class="patients-container" id="patients-container">
+				<div class="titles">
+					<div class="title"> <h3 >Paciente</h3></div>
+					<div class="title"> <h3>Contacto</h3></div>
+					<div class="title">  <h3>Teléfono</h3></div>
+				</div>
+				
+				<!-- Pacientes-->
+			</div>
+		</div>
+		
+		
+		
+		
+		<!-- Popup Agendar cita-->
+		<div id="popup" class='popup'>
+        <div class='col-12'>
+            <div>
+                <form name="formulario">
+                <div class='p-container'>
+                    <div class='row'>
+						<div class='col-6 text-right'>Tipo de Cita</div>
+						<select class="input-date2" type="text" name="type" id="nombre" value="yyyy">
+							<option>Consulta Inicial</option>
+							<option>Seguimiento</option>
+						</select>
+					</div>
+                    <div class='row'><div class='col-6 text-right'>Motivo de Cita</div>
+						<select class="input-date2" type="text" name="motive" id="nombre" value="yyyy">
+							<option>Enfermedad</option>
+							<option>Revisión</option>
+						</select>
+					</div>
+                    <div class='row'>
+						<div class='col-6 text-right'>
+							<i   style="margin-right: 15px;" class="fa-solid fa-calendar"></i>
+							<input required name="date" class="input-date" type="date">
+						</div>
+                    </div>
+					<div class='row'>
+						<div class='col-6 text-right'>
+							<i style="margin-right: 15px;" class="fa-solid fa-clock"></i>
+							<input required name="time" class="input-date" type="time">
+						</div>
+                    </div>
+					<div class='row'>
+						<div id="pac-name" class='col-6 text-right'>Paciente: </div>
+                    </div>
+                    <div class='row'><div class='col-12 text-centered cooper'><input id="btn-agendar" class="boton" type="button" value="Agendar"></div></div>	   
+                </div>
+                </form> 
+            </div>
+        </div>     
+    	</div>
+		
+			<!-- Pop up agregar Paciente -->
+		
+		<div id="popup2" class='popup2'>
+        	<div class='col-12'>
+                <div class='p-container'>
+					<!--<form>-->
+                    <div class='vertical'>
+						<div class="text"><h4>ID:</h4></div><input value="" name="id" type=text class="i-popup"  required> 
+                    </div>
+					<div class='vertical'>
+						<div class="text"><h4>Nombre:</h4></div><input value="" name="name" type=text class="i-popup"  required> 
+                    </div>
+					<div class='vertical'>
+						<div class="text"><h4>Correo:</h4></div><input value="" name="email" type=text class="i-popup"  required> 
+                    </div>
+					<div class='vertical'>
+						<div class="text"><h4>Teléfono:</h4></div><input value="" required name="phone" type=text class="i-popup"  required> 
+                    </div>
+					<div class='vertical'>
+						<div class="text"><h4>Sexo:</h4></div>
+						<select name="sex" type=text class="i-popup" >
+							<option>Masculino</option>
+							<option>Femenino</option>
+						</select> 
+                    </div>
+					<div class='vertical'>
+						<div class="text"><h4>Fecha Nac:</h4></div><input name="dateB" type="date" class="i-popup"  required> 
+                    </div>
+					<div class="up-div">
+						<div class="column">
+							<div class="file-select" id="src-file1" >
+  								<input id="in-file" type="file" name="src-file1" aria-label="Archivo">
+							</div>
+						</div>
+							<div class="column">
+								<img id="p-img" class="p-img" src="">
+							</div>
+					</div>
+                    <div  class='vertical'>
+						<input style="margin-top: 0px;" id="btn-agregar" class="boton" type="submit" value="Agregar">
+					</div>	
+					<!--</form>-->
+				</div>
+            </div>
+    	</div>
+		
+		
+		<div id="user" class="user">
+			<img src="../imagen.PNG">
+			<h4>Alejandro Barrantes Castro</h4>
+		</div>
+		
+		
+	</div>
+</body>
+</html>

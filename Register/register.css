@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:gray;
+}
+
+.user{
+    display: flex;
+    position: absolute;
+	visibility: hidden;
+    top: -20%; 
+    left: 84%;
+    width: 15%; 
+    height:12%;
+    justify-content: center;
+    padding-top: 1em;    
+    background-color:rgba(105,116,170,1.00);
+    z-index:2;
+    border: 1px solid rgba(0,0,0,.2);
+    transition: all 2.5s linear;  
+	color:white;
+}
+
+.user h4{
+	font-size:15px;
+}
+.user.active{
+	 top: 0%; 
+  visibility: visible;
+	
+}
+
+.user img{
+	width: 60px;
+	height: 50px;
+	margin-right: 5px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+
+
+#container{
+	display: inline-flex;
+}
+.right-panel{
+}
+.calendar{
+	text-align: center;
+}
+.close{
+	float: right;
+	margin-right: 4px;
+}
+
+.container{
+	display: flex;
+	height: 100%;
+	margin-left: 0px;
+	width: 100%;
+	margin-top: 0px;
+	border-color: green;
+}
+
+.center{
+	margin-left: 220px;
+	margin-right: 300px;
+	border-radius: 5px;
+	width: 60%;
+	height: 100%;
+	background-color: white;
+}
+
+.image{
+	margin-top:10px;
+	margin-left: 250px;
+	margin-right: 250px;
+	text-align: center;
+}
+
+.image-img{
+	border-radius: 30px;
+	height: 80px;
+	width: 150px;
+}
+
+.text{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: center;
+	margin-left: 190px;
+	margin-right: 190px;
+	height: 20px;
+	width: 300px;
+	font-size: 20px;
+}
+
+.inputs{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: center;
+	display: grid;
+	margin-left: 150px;
+	margin-right: 150px;
+	font-size:10px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+.input{
+	width: 420px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 17px;
+	height: 30px;
+	border-radius: 5px;
+	border: thick;
+	margin-bottom: 10px;
+	background-color:rgba(199,199,199,1.00);
+	border-color: gray;
+}
+
+.button{
+	text-align: center;
+}
+
+.button-button{
+	width: 100px;
+	height: 32px;
+	background-image: linear-gradient(to right, DarkSlateGray ,Royalblue,navy,Royalblue,DarkSlateGray);
+	border-radius: 5px;
+	color: white;
+}
+
+.schedule-popup{
+	align-self: center;
+	visibility: hidden;
+    position: absolute;
+    top: 10%; 
+    width: 600px;
+    height: 60%;
+	margin-left: 300px;
+	margin-right: 250px;
+    padding-top: 1em;    
+    background-color: white;
+    z-index:2;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+}
+
+.schedule-popup.active{
+	visibility: visible;
+}
+
+.schedules{
+	border-top: groove;
+	height: 60%;
+	width: 100%;
+	display: inline-flex;
+}
+.schedule{
+	margin-top: 20px;
+	text-align: center;
+	margin-left: 5px;
+	visibility: hidden;
+	width: 70px;
+	height: 130px;
+	border-radius: 20px;
+	background-color: rgba(15,193,124,1.00)
+}
+
+.schedule.active{
+	visibility: visible;
+}
+
+select{
+	background-color: lightgray;
+}
+
+.save{
+	border-top: groove;
+	align-content: center;
+	text-align: center;
+}
+
+.schedule-container{
+	display: grid;
+	height: 100%;
+	width: 100px;
+	text-align: center;
+}
+
+.day-input{
+	margin-top: 20px;
+}
+
+.a2{
+	color: white;
+	text-decoration: none;
+}
+
+.up-div{
+	height: 100px;
+	margin-top: 10px;
+	display: inline-flex;
+}
+
+.column{
+	width: 50%;
+	height: 100%;
+}
+.p-img{
+	border-radius: 5px;
+	height: 90px;
+}
+
+
+.file-select::before {
+  background-color: #5678EF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar'; /* testo por defecto */
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
+
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+	
+}
+
+#src-file1::before {
+  content: 'SUBIR FOTO';
+	
+}

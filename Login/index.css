@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:gray;
+}
+
+.container{
+	display: inline-flex;
+	height: 500px;
+	width: 1250px;
+	margin: 30px;
+	border-radius: 5px;
+	
+}
+
+.right{
+	border-radius: 5px;
+	height: 500px;
+	width: 675px;
+	color: white;
+	background-image: linear-gradient(to right, DarkSlateGray ,Royalblue,navy,Royalblue,DarkSlateGray);
+}
+.left{
+	border-radius: 5px;
+	width: 675px;
+	height: 500px;
+	background-color: white;
+}
+
+.image{
+	margin-top:60px;
+	margin-left: 250px;
+	margin-right: 250px;
+	text-align: center;
+}
+
+.image-img{
+	border-radius: 30px;
+	height: 120px;
+	width: 190px;
+}
+
+.text{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: center;
+	margin-left: 190px;
+	margin-right: 190px;
+	height: 20px;
+	width: 300px;
+	font-size: 20px;
+}
+
+.inputs{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	align-content: center;
+	display: grid;
+	margin-left: 150px;
+	margin-right: 150px;
+	font-size:10px;
+	/*margin-bottom: 20px;*/
+}
+.input{
+	width: 350px;
+	height: 30px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.button{
+	text-align: center;
+}
+
+.button-login{
+	width: 300px;
+	height: 32px;
+	background-image: linear-gradient(to right, DarkSlateGray ,Royalblue,navy,Royalblue,DarkSlateGray);
+	border-radius: 5px;
+	color: white;
+}
+
+.forgot{
+	display: grid;
+	text-align: center;
+}
+
+.register{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size:10px;
+	text-align: center;
+	display: inline-flex;
+	margin-left: 200px;
+	margin-right: 130px;
+	margin-top: 10px;
+}
+
+.button-register:hover{
+    color: white;
+    background-color: red;
+}
+
+
+.button-register{
+	text-align: center;
+	width: 100px;
+	height: 32px;
+	margin-top: 0px;
+	border-color: red;
+	color: red;
+	background-color: white;
+	margin-left: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+h3{
+	font-size: 13px;
+	font-family: "Segoe UI";
+	font-weight: 400;
+}
